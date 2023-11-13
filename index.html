@@ -2,25 +2,69 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  
+  <link rel="stylesheet" href="./main.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  
+  
 </head>
 <body>
- 
+  <h1 class="visually-hidden">Profile Card</h1>
   <main>
+    <div class="container">
+      <div class="personal card">
+        <img class="card__bg" src="./images/bg-pattern-card.svg" alt="background image for card" width="350" height="140">
+        <img class="personal__img" src="./images/image-victor.jpg" alt="personal image" width="96" height="96">
+        <p class="personal__name">
+          Victor Crest
+        </p>
+        <span class="personal__age">
+          26
+        </span>
+        <p class="personal__address">
+          London
+        </p>
+        <hr>
+        
+        <ul class="personal__details-list list">
+          <li class="list__item">
+            <p class="list__data">
+              80K
+            </p>
+            <p class="list__info">
+              Followers
+            </p>
+          </li>
+          <li class="list__item">
+            <p class="list__data">
+              803K
+            </p>
+            <p class="list__info">
+              Likes
+            </p>
+          </li>
+          
+          <li class="list__item">
+            <p class="list__data">
+              1.4K
+            </p>
+            <p class="list__info">
+              Photos
+            </p>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    
+    
     
   </main>
-
-
+  
+  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
